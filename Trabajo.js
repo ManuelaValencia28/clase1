@@ -1,4 +1,4 @@
-/*
+
 // 1. Prueba del Console.log//
 console.log('Hola, Mi Nombre es Manuela Valencia');
 
@@ -270,7 +270,7 @@ const numerosMayores50 = numeros.filter(function(numero)
 
 console.log("Números mayores que 50:", numerosMayores50);
 
- */
+ 
 
 
 
