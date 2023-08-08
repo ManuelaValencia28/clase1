@@ -156,11 +156,11 @@ console.log("Colores restantes:", colores);
 // 14. Reverse Loop
 
 
-const numeros = [1, 2, 3, 4, 5];
+const nume = [1, 2, 3, 4, 5];
 let multiplicacion = 1;
 
-for (i = numeros.length - 1; i >= 0; i--) {
-  multiplicacion *= numeros[i];
+for (i = nume.length - 1; i >= 0; i--) {
+  multiplicacion *= nume[i];
 }
 
 console.log("La suma total es:", multiplicacion);
@@ -180,12 +180,12 @@ do {
 console.log("La suma total es:", suma);
 
 // 16. Break Keyword
-const numeros = [10, 15, 20, 25, 30, 35, 40, 45,  50];
+const nums = [10, 15, 20, 25, 30, 35, 40, 45,  50];
 const elementoBuscado = 25;
 
-for (i = 0; i < numeros.length; i++) 
+for (i = 0; i < nums.length; i++) 
 {
-  if (numeros[i] === elementoBuscado) 
+  if (nums[i] === elementoBuscado) 
   {
     console.log(`Se encontró ${elementoBuscado} en la posición ${i}.`);
     break;
@@ -221,12 +221,12 @@ function operar(a, b, callback)
 
 // 19. Foreach 
 
-const numeros = [10, 20, 30, 40, 50];
+const num = [10, 20, 30, 40, 50];
 let suma = 0;
 
-numeros.forEach(function(numero) 
+numeros.forEach(function(num) 
 {
-  suma += numero;
+  suma += num;
 });
 
 console.log("La suma total es:", suma);
