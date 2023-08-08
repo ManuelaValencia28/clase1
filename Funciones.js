@@ -94,6 +94,9 @@ const userDataTwo = [{name:'Juan', pass:1234, mail:'@gmail.com'}];
 
 // hacer dos funciones tipo flecha, luego un callback function, usando los items anteriores// 
 
+
+// 1. Ejercicio practico con funcion tipo flecha y contiene vector y push //
+
 let CrearVector = [];
 
 const LlenarVectorNumerosPares = (CrearVector) =>
@@ -107,3 +110,24 @@ const LlenarVectorNumerosPares = (CrearVector) =>
 console.log(LlenarVectorNumerosPares(CrearVector));
 
 
+
+// 2. Función flecha que toma dos parámetros y no utiliza return//
+// 3. Funcion flecha como callback para mostrar el resultado
+
+const nums = [10, 15, 20, 25, 30, 35, 40, 45, 50];
+const BuscarNumero = 25;
+
+const EncontrarElementoBuscado = (vector, NumeroBuscado, callback) => {
+  for (let i = 0; i < vector.length; i++) {
+    if (vector[i] === NumeroBuscado) {
+      callback(NumeroBuscado, i);
+      break;
+    }
+  }
+};
+
+const MostrarResultadoCallback = (element, position) => {
+  console.log(`Resultado del callback: Se encontró el número ${element} en la posición ${position}.`);
+};
+
+EncontrarElementoBuscado(nums, BuscarNumero, MostrarResultadoCallback);
